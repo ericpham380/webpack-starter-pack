@@ -1,48 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+  entry: {
+    app: './src/index.js',
+    print: './src/print.js'
   },
-  module: {
-    rules: [
-      // Rules for loading css styles using file-loader module
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      // Rules for loading images using file-loader module
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-      // Rules for loading fonts using file-loader module
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-      // Rules for loading data including CSV, TSV, XML. JSON is built-in and working by default.
-      {
-        test: /\.(csv|tsv)$/,
-        use: [
-          'csv-loader'
-        ]
-      },
-      {
-        test: /\.xml$/,
-        use: [
-          'xml-loader'
-        ]
-      }
-    ]
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
   }
 };
