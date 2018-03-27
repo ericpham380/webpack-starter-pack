@@ -11,7 +11,7 @@ function component() {
   element.innerHTML = _.join(['Hello', 'Webpack'], ', ');
 
   // Configure the button and call printMe function when clicked.
-  button.innerHTML = "Click me and check the console!";
+  button.innerHTML = "Click me and check the console for result!";
   button.onclick = printMe;
   element.appendChild(button)
 
