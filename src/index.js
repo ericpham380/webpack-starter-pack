@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import './style.css';
-import webpack_icon from './webpack-icon.svg';
-import data from './data.xml';
+import webpack_icon from './components/homepage/webpack-icon.svg';
+import data from './components/homepage/data.xml';
 
 function component() {
   // create a div and initialize it to a variable
