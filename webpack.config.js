@@ -11,6 +11,8 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  // Sourcemaps for javascript. NOT RECOMMENDED FOR PRODUCTION
+  // devtool: 'inline-source-map',
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
