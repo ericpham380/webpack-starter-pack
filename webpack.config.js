@@ -29,6 +29,19 @@ module.exports = {
         use: [
           'file-loader'
         ]
+      },
+      // Rules for loading data including CSV, TSV, XML. JSON is built-in and working by default.
+      {
+        test: /\.(csv|tsv)$/,
+        use: [
+          'csv-loader'
+        ]
+      },
+      {
+        test: /\.xml$/,
+        use: [
+          'xml-loader'
+        ]
       }
     ]
   }

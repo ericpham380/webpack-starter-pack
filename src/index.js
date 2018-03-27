@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import webpack_icon from './webpack-icon.svg';
+import data from './data.xml';
 
 function component() {
   // create a div and initialize it to a variable
@@ -17,6 +18,9 @@ function component() {
   var icon = new Image();
   icon.src = webpack_icon;
   element.appendChild(icon);
+
+  // Adding data and console.log
+  console.log(data);
 
   return element;
 }

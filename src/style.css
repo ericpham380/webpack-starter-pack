@@ -9,6 +9,7 @@
 .hello {
   color: red;
   font-family: 'MyFont';
+  font-size: 30px;
 }
 
 .hello img {
