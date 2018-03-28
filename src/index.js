@@ -4,7 +4,7 @@ import printMe from './print.js';
 import webpack_icon from './components/homepage/webpack-icon.svg';
 import data from './components/homepage/data.xml';
 
-
+// function to create component and append to body
 function component() {
   // create a div and initialize it to a variable
   var element = document.createElement('div');
@@ -33,4 +33,5 @@ function component() {
   return element;
 }
 
+// Append the component to body
 document.body.appendChild(component());
